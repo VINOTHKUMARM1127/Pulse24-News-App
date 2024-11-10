@@ -28,6 +28,9 @@ img{
     color: rgb(255, 255, 255);
 }
 header {
+    z-index: 1;
+    top: 0;
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -87,6 +90,7 @@ a:hover{
 
 /* Skeleton */
 .sk-box {
+    z-index: 10;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin: 0px 20px;
@@ -120,7 +124,7 @@ a:hover{
         gap: 3.5rem;
         background-color: var(--mainColor);
         transition: .75s;
-        transform: translateX(100vh);
+        transform: translateX(1000vh);
     }
 
     header .show-menu {
